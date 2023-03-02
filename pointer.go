@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 //secara default go mengirim variable dengan pass by value (menduplikat)
-
+//https://github.com/derilkillms/belajar-golang
 //pointer menggunakan pass by reference
 
 type Address struct {
@@ -42,6 +42,8 @@ func main(){
 		Country: "",
 	}
 
-	ChangeCountryToIndonesia(&alamat)
+	var alamatPointer *Address = &alamat
+
+	ChangeCountryToIndonesia(alamatPointer)
 	fmt.Println(alamat)
 }
