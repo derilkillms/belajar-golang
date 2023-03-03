@@ -25,4 +25,8 @@ func main() {
 	value := strconv.FormatInt(1000000, 10)
 
 	fmt.Println(value)
+
+	// strconv.Itoa()
+	valueInt, err := strconv.Atoi("2000000")
+	fmt.Println(valueInt)
 }
