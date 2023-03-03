@@ -17,5 +17,5 @@ func main() {
 	fmt.Println("Host	:", *host)
 	fmt.Println("User	:", *user)
 	fmt.Println("Password :", *password)
-	fmt.Println("Numbaer", *number)
+	fmt.Println("Number :", *number)
 }
